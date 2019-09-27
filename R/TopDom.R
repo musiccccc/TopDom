@@ -114,6 +114,8 @@ TopDom <- function(data, window.size, outFile = NULL, statFilter = TRUE, ..., de
   bins <- data$bins
   matrix.data <- data$counts
   n_bins <- nrow(bins)
+  print ("success")
+  n_bins <- as.numeric(n_bins)
 
   mean.cf <- rep(0, times = n_bins)
   pvalue <- rep(1.0, times = n_bins)
